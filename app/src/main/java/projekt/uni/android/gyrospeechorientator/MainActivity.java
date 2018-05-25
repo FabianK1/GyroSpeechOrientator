@@ -251,16 +251,16 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             commandMap.get("rechts").get("y").put("+","ballRight");
             commandMap.get("rechts").get("y").put("-","ballLeft");
             commandMap.get("rechts").put("x",new HashMap<String, String>());
-            commandMap.get("rechts").get("x").put("+","ballTop");
-            commandMap.get("rechts").get("x").put("-","ballBottom");
+            commandMap.get("rechts").get("x").put("+","ballBottom");
+            commandMap.get("rechts").get("x").put("-","ballTop");
 
             commandMap.put("links",new HashMap<String, HashMap<String, String>>());
             commandMap.get("links").put("y",new HashMap<String, String>());
             commandMap.get("links").get("y").put("+","ballLeft");
             commandMap.get("links").get("y").put("-","ballRight");
             commandMap.get("links").put("x",new HashMap<String, String>());
-            commandMap.get("links").get("x").put("+","ballBottom");
-            commandMap.get("links").get("x").put("-","ballTop");
+            commandMap.get("links").get("x").put("+","ballTop");
+            commandMap.get("links").get("x").put("-","ballBottom");
         }
 
         public String getVoiceOrientation(String voiceCommand,String angle, String sign){
